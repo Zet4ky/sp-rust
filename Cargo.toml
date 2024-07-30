@@ -1,0 +1,11 @@
+[package]
+name = "simple-pass"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+reqwest = { version = "0.12.5", features = ["json"] }
+tokio = { version = "1", features = ["full"] }
+serde = { version = "1.0", features = ["derive"] }
+rand = {version = "0.8"} 
+uuid = { version = "1.2", features = ["v4"] }
