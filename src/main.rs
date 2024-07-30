@@ -9,7 +9,7 @@ async fn main() -> Result<(), Error> {
 
     for _i in 0..9 {
 
-        let response: Result<Vec<String>, reqwest::Error> = reqwest::get("https://random-word-api.herokuapp.com/word?number=75")
+        let response: Result<Vec<String>, reqwest::Error> = reqwest::get("https://random-word-api.herokuapp.com/word?lang=en&number=75")
             .await?
             .json()
             .await;
